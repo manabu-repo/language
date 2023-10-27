@@ -1,4 +1,7 @@
 ---
+const title = "Welcome to the blog"
+const description = "This is a test post"
+const intro = "Hello, I'm a software engineer. I'm writing about my experiences as a developer."
 ---
 
 <section class="mb-8">
@@ -9,13 +12,13 @@
       <span
         class="bg-gradient-to-br from-[#fb923c] via-[#f97316] to-[#ea580c] dark:from-primary-main dark:via-primary-main dark:to-primary-main bg-clip-text text-transparent"
       >
-        Captain Awesome
+        {title}
       </span>
     </h1>
-    <p class="text-2xl pb-4">Web Developer. OSS Wizard. Blogger.</p>
+    <p class="text-2xl pb-4">{description}</p>
   </div>
   <div>
-    <p class="mb-5">
+    <!-- <p class="mb-5">
       Hello! This is a starter template to build your own blog with 
       <a href={"https://github.com/flexdinesh/blogster"} target="_blank">Blogster</a>. 
       Available in four themes  
@@ -28,6 +31,8 @@
     </p>
     <p class="text-center whitespace-nowrap overflow-auto">
       <code class="py-1 px-2">npx create-blogster@latest --theme sleek</code>
-    </p>
+    </p> -->
+
+    <p class="mb-5">{intro}</p>
   </div>
 </section>
