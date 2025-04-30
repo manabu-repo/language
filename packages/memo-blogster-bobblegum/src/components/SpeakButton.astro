@@ -1,0 +1,20 @@
+<script>
+import { useSpeak } from '@use-kit/ian'
+  // @ts-nocheck
+  class SpeakButton extends HTMLElement {
+    connectedCallback() {
+      this.addEventListener('click', () => {
+        const text = this.getAttribute('data-text') ?? ""
+        useSpeak(text)
+      })
+    }
+  }
+  customElements.define('speak-button', SpeakButton)
+</script>
+
+<button
+  class="flex items-center justify-center w-10 h-10 rounded-full bg-gray-200 dark:bg-gray-800 hover:bg-gray-300 dark:hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500"
+  id="speak-button"
+  aria-label="Speak"
+  data-text="{{ text }}"
+>click</button>
