@@ -1,11 +1,11 @@
 <script>
-import { useSpeak } from '@use-kit/ian'
+import { speak } from '@use-kit/functions'
   // @ts-nocheck
   class SpeakButton extends HTMLElement {
     connectedCallback() {
       this.addEventListener('click', () => {
         const text = this.getAttribute('data-text') ?? ""
-        useSpeak(text)
+        speak(text)
       })
     }
   }
