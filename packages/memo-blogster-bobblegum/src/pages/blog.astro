@@ -72,7 +72,7 @@ const sortedPosts = posts
                 </time>
               </div>
 
-              {post.frontmatter.description && (
+              {"description" in post.frontmatter && post.frontmatter.description && (
                 <div class="text-text-muted text-sm justify-items-stretch pb-1">{post.frontmatter.description}</div>
               )}
             </li>
